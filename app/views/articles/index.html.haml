@@ -1,0 +1,8 @@
+%p{:id => "notice"}= notice
+
+.container
+  %h1 Echop's Blog
+  %h3 My first Rails Application for CoderSchool
+  = render @articles
+  %br
+  = link_to 'New Article', new_article_path

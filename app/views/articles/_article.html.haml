@@ -1,0 +1,8 @@
+.row
+  .col-sm-8
+    .card
+      .card-block
+        %h4{:class => "card-title"}= article.title
+        %p{:class => "card-text"}= @markdown.render(article.body).html_safe
+      .card-footer
+        = link_to 'Edit', edit_article_path(article), class: 'btn btn-warning'
